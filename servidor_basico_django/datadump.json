@@ -1,0 +1,334 @@
+[
+{
+    "model": "auth.group",
+    "fields": {
+        "name": "profesores",
+        "permissions": [
+            [
+                "add_pokemon",
+                "pokemon",
+                "pokemon"
+            ],
+            [
+                "change_pokemon",
+                "pokemon",
+                "pokemon"
+            ],
+            [
+                "delete_pokemon",
+                "pokemon",
+                "pokemon"
+            ],
+            [
+                "view_pokemon",
+                "pokemon",
+                "pokemon"
+            ]
+        ]
+    }
+},
+{
+    "model": "auth.group",
+    "fields": {
+        "name": "entrenadores",
+        "permissions": [
+            [
+                "view_pokemon",
+                "pokemon",
+                "pokemon"
+            ]
+        ]
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$600000$ri8ChRkniaXeyfDL605fdv$wW8F/OknEQEM1fqn4+C/GnIC7tHpN47y56c0Tgw8k5o=",
+        "last_login": "2023-06-20T18:02:17.623Z",
+        "is_superuser": true,
+        "username": "oak",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-06-20T17:46:41Z",
+        "groups": [
+            [
+                "profesores"
+            ]
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$600000$4TZnW8uFpw9e6YlW8hepuI$FvjJZ/Cbr9Kw2SxY7b//mwviRf/2PWokpbplHQOhbJM=",
+        "last_login": "2023-06-20T18:01:58.644Z",
+        "is_superuser": false,
+        "username": "ash",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-06-20T17:50:25Z",
+        "groups": [
+            [
+                "entrenadores"
+            ]
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$600000$ujAg6pH3Zt5G2zMlBcHeNt$KWjQzCAKS5No0/Ol3EjNqvFGTxNBqAssHIvFo7akYlY=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "rojo",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-06-20T17:51:13Z",
+        "groups": [
+            [
+                "entrenadores"
+            ]
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ek17g5erubrc6jiwk47vq1ql2eyz2oij",
+    "fields": {
+        "session_data": ".eJxVjDsOwyAQBe9CHSFgjYGU6X0GtHw2OIlAMnYV5e6xJRdJ-2bmvZnHbS1-63nxc2JXJtnldwsYn7keID2w3huPra7LHPih8JN2PrWUX7fT_Tso2MteaxxCxoSgIVOQIoxSCmutdIMlEkppMBhJO3ApQjSQDZBxu0VRmlGxzxfkbjd1:1qBfgH:uli5f5CRj2nI0xEr4YxMK0yGglKNs6R7goHAUHFbPPM",
+        "expire_date": "2023-07-04T18:02:17.627Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "h0lh1xd8g3k7jck62nfwkp99l9mwk69b",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSE8phRcuvcbyMBMpWogKe3K-O_apAvd3nPOfYmI21ri1nmJM4mzMOL0uyXMD647oDvWW5O51XWZk9wVedAur434eTncv4OCvXxrjyaAthSCBeOZ2GbLOGpnhgQTJ5MxU5hAqwGctQqYnec8OgIiQ0q8P93YOAM:1qBfb3:63YDVP54fCak4zKSwOJsM1SX91gzJrAMupakXu8ztmM",
+        "expire_date": "2023-07-04T17:56:53.763Z"
+    }
+},
+{
+    "model": "pokemon.pokemon",
+    "pk": 1,
+    "fields": {
+        "dexNumber": 25,
+        "name": "Pikachu",
+        "ability": "Electricidad Estßtica"
+    }
+},
+{
+    "model": "pokemon.pokemon",
+    "pk": 2,
+    "fields": {
+        "dexNumber": 26,
+        "name": "Raichu",
+        "ability": "Electricidad Estßtica"
+    }
+},
+{
+    "model": "pokemon.pokemon",
+    "pk": 3,
+    "fields": {
+        "dexNumber": 1,
+        "name": "Bulbasaur",
+        "ability": "Espesura"
+    }
+},
+{
+    "model": "pokemon.pokemon",
+    "pk": 4,
+    "fields": {
+        "dexNumber": 2,
+        "name": "Ivysaur",
+        "ability": "Espesura"
+    }
+},
+{
+    "model": "pokemon.pokemon",
+    "pk": 6,
+    "fields": {
+        "dexNumber": 151,
+        "name": "Mew",
+        "ability": "Levitaci¾n"
+    }
+},
+{
+    "model": "pokemon.pokemon",
+    "pk": 7,
+    "fields": {
+        "dexNumber": 150,
+        "name": "Mewtwo",
+        "ability": "Presi¾n"
+    }
+},
+{
+    "model": "ability.ability",
+    "pk": 1,
+    "fields": {
+        "aName": "Electricidad Estßtica",
+        "description": "Paraliza al contacto"
+    }
+},
+{
+    "model": "ability.ability",
+    "pk": 2,
+    "fields": {
+        "aName": "Espesura",
+        "description": "Potencia movimientos tipo Planta en apuros"
+    }
+},
+{
+    "model": "ability.ability",
+    "pk": 3,
+    "fields": {
+        "aName": "Levitaci¾n",
+        "description": "Evita movimientos de Tierra"
+    }
+},
+{
+    "model": "ability.ability",
+    "pk": 4,
+    "fields": {
+        "aName": "Presi¾n",
+        "description": "Ejerce Presi¾n"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2023-06-20T17:48:27.446Z",
+        "user": [
+            "oak"
+        ],
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "object_id": "1",
+        "object_repr": "profesores",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2023-06-20T17:48:39.870Z",
+        "user": [
+            "oak"
+        ],
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "object_id": "2",
+        "object_repr": "entrenadores",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2023-06-20T17:50:25.672Z",
+        "user": [
+            "oak"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "2",
+        "object_repr": "ash",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2023-06-20T17:50:44.391Z",
+        "user": [
+            "oak"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "2",
+        "object_repr": "ash",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Staff status\", \"Groups\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2023-06-20T17:51:13.768Z",
+        "user": [
+            "oak"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "3",
+        "object_repr": "rojo",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2023-06-20T17:51:20.185Z",
+        "user": [
+            "oak"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "3",
+        "object_repr": "rojo",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Staff status\", \"Groups\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2023-06-20T17:52:06.721Z",
+        "user": [
+            "oak"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "1",
+        "object_repr": "oak",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+    }
+}
+]
